@@ -36,25 +36,25 @@
                 <v-list>
                     <v-list-item
                         class="px-2"
-                        key="sendMessages"
-                        to="/hellos/sendMessages"
+                        key="sends"
+                        to="/hellos/sends"
                         @click="changeUrl()"
                         color="primary"
                         style="font-weight:700;"
                     >
-                        SendMessage
+                        Send
                     </v-list-item>
 
 
                     <v-list-item
                         class="px-2"
-                        key="receiveMessages"
-                        to="/worlds/receiveMessages"
+                        key="receives"
+                        to="/worlds/receives"
                         @click="changeUrl()"
                         color="primary"
                         style="font-weight:700;"
                     >
-                        ReceiveMessage
+                        Receive
                     </v-list-item>
 
 
@@ -137,17 +137,17 @@ export default {
         ImageUrl: '',
         aggregate: [
             { 
-                title: 'SendMessage', 
+                title: 'Send', 
                 description: '', 
-                key: 'sendMessages', 
-                route: '/hellos/sendMessages',
+                key: 'sends', 
+                route: '/hellos/sends',
                 ImageUrl: '',
             },
             { 
-                title: 'ReceiveMessage', 
+                title: 'Receive', 
                 description: '', 
-                key: 'receiveMessages', 
-                route: '/worlds/receiveMessages',
+                key: 'receives', 
+                route: '/worlds/receives',
                 ImageUrl: '',
             },
             

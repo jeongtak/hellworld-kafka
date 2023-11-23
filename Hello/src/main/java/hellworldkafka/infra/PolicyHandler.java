@@ -18,7 +18,7 @@ import org.springframework.stereotype.Service;
 public class PolicyHandler {
 
     @Autowired
-    SendMessageRepository sendMessageRepository;
+    SendRepository sendRepository;
 
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString) {}

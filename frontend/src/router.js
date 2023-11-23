@@ -5,11 +5,11 @@ import Router from 'vue-router'
 Vue.use(Router);
 
 
-import HelloSendMessageManager from "./components/listers/HelloSendMessageCards"
-import HelloSendMessageDetail from "./components/listers/HelloSendMessageDetail"
+import HelloSendManager from "./components/listers/HelloSendCards"
+import HelloSendDetail from "./components/listers/HelloSendDetail"
 
-import WorldReceiveMessageManager from "./components/listers/WorldReceiveMessageCards"
-import WorldReceiveMessageDetail from "./components/listers/WorldReceiveMessageDetail"
+import WorldReceiveManager from "./components/listers/WorldReceiveCards"
+import WorldReceiveDetail from "./components/listers/WorldReceiveDetail"
 
 
 export default new Router({
@@ -17,25 +17,25 @@ export default new Router({
     base: process.env.BASE_URL,
     routes: [
             {
-                path: '/hellos/sendMessages',
-                name: 'HelloSendMessageManager',
-                component: HelloSendMessageManager
+                path: '/hellos/sends',
+                name: 'HelloSendManager',
+                component: HelloSendManager
             },
             {
-                path: '/hellos/sendMessages/:id',
-                name: 'HelloSendMessageDetail',
-                component: HelloSendMessageDetail
+                path: '/hellos/sends/:id',
+                name: 'HelloSendDetail',
+                component: HelloSendDetail
             },
 
             {
-                path: '/worlds/receiveMessages',
-                name: 'WorldReceiveMessageManager',
-                component: WorldReceiveMessageManager
+                path: '/worlds/receives',
+                name: 'WorldReceiveManager',
+                component: WorldReceiveManager
             },
             {
-                path: '/worlds/receiveMessages/:id',
-                name: 'WorldReceiveMessageDetail',
-                component: WorldReceiveMessageDetail
+                path: '/worlds/receives/:id',
+                name: 'WorldReceiveDetail',
+                component: WorldReceiveDetail
             },
 
 

@@ -15,7 +15,7 @@ public class HelloPublished extends AbstractEvent {
     private String userName;
     private String message;
 
-    public HelloPublished(SendMessage aggregate) {
+    public HelloPublished(Send aggregate) {
         super(aggregate);
     }
 

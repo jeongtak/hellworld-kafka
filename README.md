@@ -33,11 +33,11 @@ mvn spring-boot:run
 ## Test by API
 - Hello
 ```
- http :8088/sendMessages id="id" userName="user_name" message="message" 
+ http :8088/sends id="id" userName="user_name" message="message" 
 ```
 - World
 ```
- http :8088/receiveMessages id="id" userName="user_name" message="message" 
+ http :8088/receives id="id" userName="user_name" message="message" 
 ```
 
 

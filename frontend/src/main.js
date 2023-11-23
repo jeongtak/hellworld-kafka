@@ -45,9 +45,9 @@ templateFiles.keys().forEach(function(tempFiles) {
 Vue.use(Managing);
 const pluralCaseList = []
 
-pluralCaseList.push( {plural: "hellos/sendMessages", pascal: "HelloSendMessage"} )
+pluralCaseList.push( {plural: "hellos/sends", pascal: "HelloSend"} )
 
-pluralCaseList.push( {plural: "worlds/receiveMessages", pascal: "WorldReceiveMessage"} )
+pluralCaseList.push( {plural: "worlds/receives", pascal: "WorldReceive"} )
 
 
 Vue.prototype.$ManagerLists.forEach(function(item, idx) {

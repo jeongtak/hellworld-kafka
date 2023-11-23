@@ -18,7 +18,7 @@ import org.springframework.stereotype.Service;
 public class PolicyHandler {
 
     @Autowired
-    ReceiveMessageRepository receiveMessageRepository;
+    ReceiveRepository receiveRepository;
 
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString) {}
@@ -36,7 +36,7 @@ public class PolicyHandler {
         );
 
         // Sample Logic //
-        ReceiveMessage.worldConsumed(event);
+        Receive.worldConsumed(event);
     }
 }
 //>>> Clean Arch / Inbound Adaptor
